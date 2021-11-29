@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Portfolio</title>
+		<link href="https://fonts.googleapis.com/css?family=Poiret+One|Roboto&display=swap" rel="stylesheet"/>
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body>
+        <div id="cursor">
+            <span class="more">
+                <ion-icon name="add-circle-outline"></ion-icon>
+            </span>
+        </div>
+
+        <div id="brand">
+            <a href="">LOGO</a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="">atelier</a></li>
+                <li><a href="">blog</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+            <div class="toggler">
+                <ion-icon class="open" name="menu"></ion-icon>
+                <ion-icon class="close" name="close"></ion-icon>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="img-wrapper">
+              <div class="karina"></div>
+            </div>
+    
+            <div class="text">
+              <h1>awgedog</h1>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+    
+            <div class="name">awgedog </div>
+          </div>
+        </div>
+
+
+        <div class="social-media">
+            <ul>
+                <li><a href=""><ion-icon name="logo-instagram"></ion-icon> </a></li>
+                <li><a href=""><ion-icon name="logo-facebook"></ion-icon> </a></li>
+                <li><a href=""><ion-icon name="logo-linkedin"></ion-icon> </a></li>
+            </ul>
+        </div>
+
+
+
+
+        <section id="gallery-section">
+            <div class="img-container">
+                <img src="assets/img/1.jpg" alt="img-1">
+                <h4>Lorem ipsum dolor sit, </h4>
+            </div>
+            <div class="img-container">
+                <img src="assets/img/2.jpg" alt="img-2">
+                <h4> amet consectetur adipisicing elit.</h4>
+            </div>
+            <div class="img-container">
+                <img src="assets/img/3.jpg" alt="img-3">
+                <h4>Adipisci, facere possimus. Dolor omnis</h4>
+            </div>
+            <div class="img-container">
+                <img src="assets/img/4.jpg" alt="img-4">
+                <h4>inventore qui neque optio porro veniam.</h4>
+            </div>
+            <div class="img-container">
+                <img src="assets/img/5.jpg" alt="img-5">
+                <h4>Fugiat ipsam, repellendus numquam debitis</h4>
+            </div>
+            <div class="img-container">
+                <img src="assets/img/6.jpg" alt="img-6">
+                <h4>harum libero tempora delectus voluptatum facilis? </h4>
+            </div>
+        </section>
+
+        <section id="footer-section">
+            <div class="link"><a href="">contact</a></div>
+            *<div class="link"><a href="">team</a></div>
+        </section>
+
+
+
+
+		<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+		<script src="assets/js/script.js"></script>
+        <script>
+            TweenMax.to('.left', 2, {
+              delay: .8,
+              width:'50%',
+              ease: Power2.easeInOut
+            })
+        
+            TweenMax.to('.right', 2, {
+              delay: .6,
+              width:'50%',
+              ease: Power3.easeInOut
+            })
+        
+            TweenMax.from('.nav', 2, {
+              delay: .8,
+              opacity: 0,
+              ease: Expo.easeInOut
+            })
+        
+            TweenMax.from('.text h1', 2, {
+              delay: .6,
+              x: 1000,
+              ease: Circ.easeInOut
+            })
+        
+            TweenMax.from('.text p', 2, {
+              delay: .7,
+              x: 1000,
+              ease: Circ.easeInOut
+            })
+        
+            TweenMax.to('.karina', 2, {
+              delay: 1.5,
+              width: '1300px',
+              ease: Power2.easeInOut
+            })
+        
+            TweenMax.staggerFrom('.bottomnav ul li', 2, {
+              delay: 1,
+              x: 1000,
+              ease: Circ.easeInOut
+            }, 0.08)
+        
+            TweenMax.from('.info', 2, {
+              delay: 1.5,
+              y: 100,
+              ease: Circ.easeInOut
+            })
+        
+            TweenMax.from('.name', 2, {
+              delay: 1.5,
+              x: -600,
+              ease: Circ.easeInOut
+            })
+        
+        
+            
+          </script>
+	</body>
+</html>
